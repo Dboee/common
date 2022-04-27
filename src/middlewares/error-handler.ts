@@ -13,6 +13,7 @@ export const errorHandler = (
   }
 
   // DEFAULT BEHAVIOUR
+  console.error(err);
   res.status(400).send({
     errors: [
       {
