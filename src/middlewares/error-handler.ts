@@ -16,7 +16,7 @@ export const errorHandler = (
   res.status(400).send({
     errors: [
       {
-        message: err.message,
+        message: '400 default error: ' + err.message,
       },
     ],
   });
